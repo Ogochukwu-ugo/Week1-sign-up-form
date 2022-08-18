@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(245, 245, 245, 0.87);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+        .div1 {
+            width: 500px;
+            height: 100%;
+            position: relative;
+        }
+
+        #bg-img {
+            width: 100%;
+            height: 100%;
+    
+        }
+        #photo {
+            position: absolute;
+            bottom: 8px;
+            margin-left: 6rem;
+            font-size: 10px;
+            color: #077d19;
+            background-color: transparent;
+            font-family:  Helvetica;
+        }
+        .line {
+            text-decoration: underline;
+            font-weight: 500;
+            background-color: transparent;
+        }
+        .div2 {
+            background-color: rgba(5, 4, 4, 0.644);
+            position: absolute;
+            top: 12rem;
+            width: 100%;
+            height: 90px;
+        }
+        .logo {
+            display: flex;
+            background-color: transparent;
+            color: whitesmoke;
+            font-weight: bolder;
+            font-style: oblique;
+            font-size: larger;
+        }
+        #logo {
+            background-color: transparent;
+            width: 80px;
+            height: 60px;
+            margin-left: 6rem;
+            margin-top: 12px;
+        }
+        h4 {
+            background-color: transparent;
+            margin-top: 35px;
+            margin-left: 2px;
+        }
+        #signup {
+            margin-top: 5px;
+        }
+        .signup-text {
+            padding-top: 120px;
+            max-width: 800px;
+            width: 100%;
+            
+        }
+        h6, form, p {
+            padding-left: 40px;
+        }
+        #online-detail {
+            width: 350px;
+            margin-top: 2px;
+            font-size: small;
+        }
+        .form-section {
+            background-color: white;
+            height: 300px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 4px rgba(128, 128, 128, 0.4);
+        }
+        form {
+            background-color: white;
+            padding-top: 5px;
+        }
+        .form-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            background-color: transparent;
+        }
+        .labdiv {
+            background-color: transparent;
+        }
+        .labspace {
+            margin-right: 250px;
+            background-color: transparent;
+        }
+        label {
+            background-color: transparent;
+            margin-bottom: 1px;
+            text-transform: uppercase;
+            font-size: small;
+            font-weight: 600;
+            color: rgba(128, 128, 128, 0.904);
+        }
+        input {
+            width: 220px;
+            padding: 5px;
+            font-weight: 600;
+            border: 2px solid rgba(128, 128, 128, 0.587);
+            border-radius: 5px;
+            box-shadow: 2px 2px rgba(128, 128, 128, 0.395);
+            background-color: white;
+        }
+        input[type=text]:focus {
+            outline: none !important;
+            border-color: rgba(0, 0, 255, 0.703);
+            color: rgba(128, 128, 128, 0.904)
+        }
+        input[type=email]:focus {
+            outline: none !important;
+            border-color: rgba(0, 0, 255, 0.703);
+            color: rgba(128, 128, 128, 0.904)
+        }
+        .labdiv input[type=password], #labspace {
+            outline: none;
+            border: 2px solid rgba(255, 0, 0, 0.705);
+        }
+        .error-message {
+            font-size: x-small;
+            font-weight: bold;
+            color: rgba(255, 0, 0, 0.705);
+            background-color: transparent;
+        }
+        button {
+            width: 20%;
+            margin-top: 50px;
+            padding: 4px;
+            margin-left: 40px;
+            font-size: 700;
+            font-weight: bold;
+            background-color: #077d19;
+            color: white;
+            border: 1px #077d19;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgba(138, 183, 138, 0.402);
+        }
+        p {
+            font-size: smaller;
+            font-weight: 500;
+        }
+        span {
+            color: #077d19;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="div1">
+            <img src="images/terrell-garnett-uwmj6bDQThk-unsplash.jpg" alt="male fashion" id="bg-img">
+            <p id="photo">Photo by <span class="line">Terrell Garnett</span> on <span class="line">Unsplash</span></p><br>
+            <div class="div2">
+                <div class="logo">
+                    <img src="images/nonso 3.png" alt="logo" id="logo">
+                    <h4>NONNY CLOTHIERS</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup-text">
+            <h6 id="online-detail">
+                This is not a real fashion online service!
+                But it's a place where you can freely check for 
+                all kinds of male fashions and place your order, 
+                If you need a wardrobe change.
+            </h6><br>
+            <h6 style=" font-size: small; margin-top: -8px;">Sign up to get started.</h6><br>
+            <div class="form-section">
+                <form >
+                    <h4 id="signup">Sign Up</h4> <br>
+                    <div class="form-details">
+                       <div class="labdiv" >
+                            <label for="first name">First Name</label> <br>
+                            <input type="text" name="first name" >
+                       </div>
+                        <div class="labspace">
+                            <label for="last name">Last Name</label><br>
+                            <input type="text" name="last name" >
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-details">
+                        <div class="labdiv" >
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" >
+                        </div>
+                        <div class="labspace">
+                            <label for="phone no.">Phone No.</label><br>
+                            <input type="text" name="phone no." >
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-details">
+                        <div class="labdiv" >
+                            <label for="password">Password</label><br>
+                            <input type="password" name="password" >
+                            <div class="error-message">* Passwords do not match</div>
+                        </div>
+                        <div class="labspace">
+                            <label for="confirm password">Confirm Password</label><br>
+                            <input type="password" name="confirm password" id="labspace" >
+                        </div>
+                    </div>
+                    
+                </form>
+                <button type="submit">Sign Up</button><br>
+                <p>Already have an account? <span> Log in </span> </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
